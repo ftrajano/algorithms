@@ -16,17 +16,60 @@ pra facilitar a codificação vamos começar armazenando inteiros.
 
 Operações que vamos implantar nas linked lists:
 
-<ol>
-  <li>void clear(List l);</li>
-  <li>void insert(List l, E item);</li>
-  <li>void append(List l, E item);</li>
-  <li>E remove(List l);</li>
-  <li>void moveToStart(List l);</li>
-  <li>void moveToEnd(List l);</li>
-  <li>void prev(List l);</li>
-  <li>void next(List l);</li>
-  <li>int length(List l);</li>
-  <li>int currPos(List l);</li>
-  <li>void moveToPos(List l, int pos);</li>
-  <li>E getValue(List l);</li>
+<ol><li>
+      <strong>__init__</strong>
+      <p>Initializes a LinkedList object with a given value as the head node.</p>
+    </li>
+    <li>
+      <strong>head</strong>
+      <p>Returns the head node of the LinkedList.</p>
+    </li>
+    <li>
+      <strong>tail</strong>
+      <p>Returns the tail node of the LinkedList.</p>
+    </li>
+    <li>
+      <strong>length</strong>
+      <p>Returns the length (number of nodes) in the LinkedList.</p>
+    </li>
+    <li>
+      <strong>clear</strong>
+      <p>Clears the LinkedList by removing all nodes.</p>
+    </li>
+    <li>
+      <strong>insertAtBeginning</strong>
+      <p>Inserts a new node with the given value at the beginning of the LinkedList.</p>
+    </li>
+    <li>
+      <strong>insertAtEnd</strong>
+      <p>Inserts a new node with the given value at the end of the LinkedList.</p>
+    </li>
+    <li>
+      <strong>insertAtIndex</strong>
+      <p>Inserts a new node with the given value at the specified index in the LinkedList.</p>
+    </li>
+    <li>
+      <strong>deleteNode</strong>
+      <p>Deletes the node with the given value from the LinkedList.</p>
+    </li>
+    <li>
+      <strong>deleteAtBeginning</strong>
+      <p>Deletes the first node from the LinkedList.</p>
+    </li>
+    <li>
+      <strong>deleteAtEnd</strong>
+      <p>Deletes the last node from the LinkedList.</p>
+    </li>
+    <li>
+      <strong>searchValue</strong>
+      <p>Searches for the given value in the LinkedList and returns it if found.</p>
+    </li>
+    <li>
+      <strong>isEmpty</strong>
+      <p>Checks if the LinkedList is empty and returns a boolean value.</p>
+    </li>
+    <li>
+      <strong>printList</strong>
+      <p>Prints the values of all nodes in the LinkedList.</p>
+    </li>
 </ol>
