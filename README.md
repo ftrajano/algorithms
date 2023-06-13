@@ -33,12 +33,10 @@ Operações que vamos implantar nas linked lists:
       <strong>insertAtBeginning</strong> - Inserts a new node with the given value at the beginning of the LinkedList.
     </li>
     <li>
-      <strong>insertAtEnd</strong>
-      <p>Inserts a new node with the given value at the end of the LinkedList.</p>
+      <strong>insertAtEnd</strong> - Inserts a new node with the given value at the end of the LinkedList.
     </li>
     <li>
-      <strong>insertAtIndex</strong>
-      <p>Inserts a new node with the given value at the specified index in the LinkedList.</p>
+      <strong>insertAtIndex</strong> - Inserts a new node with the given value at the specified index in the LinkedList.
     </li>
     <li>
       <strong>deleteNode</strong> - Deletes the node with the given value from the LinkedList.
