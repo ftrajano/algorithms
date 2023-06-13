@@ -16,29 +16,21 @@ pra facilitar a codificação vamos começar armazenando inteiros.
 
 Operações que vamos implantar nas linked lists:
 
-<ol><li>
-      <strong>__init__</strong>
-      <p>Initializes a LinkedList object with a given value as the head node.</p>
+<ol>
+    <li>
+      <strong>head</strong> - Returns the head node of the LinkedList.
     </li>
     <li>
-      <strong>head</strong>
-      <p>Returns the head node of the LinkedList.</p>
+      <strong>tail</strong> - Returns the tail node of the LinkedList.
     </li>
     <li>
-      <strong>tail</strong>
-      <p>Returns the tail node of the LinkedList.</p>
+      <strong>length</strong> - Returns the length (number of nodes) in the LinkedList.
     </li>
     <li>
-      <strong>length</strong>
-      <p>Returns the length (number of nodes) in the LinkedList.</p>
+      <strong>clear</strong> - Clears the LinkedList by removing all nodes.
     </li>
     <li>
-      <strong>clear</strong>
-      <p>Clears the LinkedList by removing all nodes.</p>
-    </li>
-    <li>
-      <strong>insertAtBeginning</strong>
-      <p>Inserts a new node with the given value at the beginning of the LinkedList.</p>
+      <strong>insertAtBeginning</strong> - Inserts a new node with the given value at the beginning of the LinkedList.
     </li>
     <li>
       <strong>insertAtEnd</strong>
@@ -49,27 +41,21 @@ Operações que vamos implantar nas linked lists:
       <p>Inserts a new node with the given value at the specified index in the LinkedList.</p>
     </li>
     <li>
-      <strong>deleteNode</strong>
-      <p>Deletes the node with the given value from the LinkedList.</p>
+      <strong>deleteNode</strong> - Deletes the node with the given value from the LinkedList.
     </li>
     <li>
-      <strong>deleteAtBeginning</strong>
-      <p>Deletes the first node from the LinkedList.</p>
+      <strong>deleteAtBeginning</strong> - Deletes the first node from the LinkedList.
     </li>
     <li>
-      <strong>deleteAtEnd</strong>
-      <p>Deletes the last node from the LinkedList.</p>
+      <strong>deleteAtEnd</strong> - Deletes the last node from the LinkedList.
     </li>
     <li>
-      <strong>searchValue</strong>
-      <p>Searches for the given value in the LinkedList and returns it if found.</p>
+      <strong>searchValue</strong> - Searches for the given value in the LinkedList and returns it if found.
     </li>
     <li>
-      <strong>isEmpty</strong>
-      <p>Checks if the LinkedList is empty and returns a boolean value.</p>
+      <strong>isEmpty</strong> - Checks if the LinkedList is empty and returns a boolean value.
     </li>
     <li>
-      <strong>printList</strong>
-      <p>Prints the values of all nodes in the LinkedList.</p>
+      <strong>printList</strong> - Prints the values of all nodes in the LinkedList.
     </li>
 </ol>
