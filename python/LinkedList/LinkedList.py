@@ -61,16 +61,22 @@ class LinkedList:
     def deleteNode(self, value):
         curr = self._head
         if(curr.value==value):
-            self._head = self._head.next
-            self._length-=1
-        else:
-            while(curr.next.value!=value):
-                curr = cur.next
-            if(curr.next.value==None):
-                print('Lista nao tem o valor informado!')
-            else:
-                curr.next = curr.next.next
+            if(self._length==1):
+                self._head = None
                 self._length-=1
+                self._tail = None
+            else:
+                self._head = self._head.next
+                self._length-=1
+        else:
+            while(curr.next!=None):
+                if(curr.next.value==value):
+                    curr.next = curr.next.next
+                    self._length-=1
+                    break
+                else:
+                    curr=curr.next
+            print('valor nao encontrado!')  
 
     def deleteAtBeginning(self):
         self._head = self._head.next

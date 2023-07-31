@@ -6,7 +6,7 @@ from LinkedList import LinkedList
 def main():
 
     l1 = LinkedList(1)
-
+    l1.deleteNode(1)
     # Testing isEmpty
     #l1.clear()
     #print(l1.isEmpty())
@@ -30,20 +30,25 @@ def main():
     #l1.printList()
 
     # Testing deleteNode
-    #l1.deleteNode(7)
-    #l1.printList()
+    l1.deleteNode(7)
+    l1.printList()
+    l1.deleteNode(2)
+    l1.printList()
+    l1.deleteNode(3)
+    l1.printList()
+    l1.deleteNode(5)
 
     # Testing deleteAtBeginning
     #l1.deleteAtBeginning()
     #l1.printList()
 
     # Testing deleteAtEnd
-    l1.deleteAtEnd()
-    l1.printList()
+    #l1.deleteAtEnd()
+    #l1.printList()
 
     # Testing searchValue
-    print(l1.searchValue(2))
-    print(l1.searchValue(3))
+    #print(l1.searchValue(2))
+    #print(l1.searchValue(3))
 
     
 if __name__ == '__main__':
