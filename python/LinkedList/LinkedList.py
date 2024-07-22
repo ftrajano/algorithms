@@ -2,7 +2,9 @@ from Node import Node
 
 class LinkedList:
 
-    def __init__(self, value ):
+	# Refatorar isso aqui, 
+ 	# porque uma linked list pode ser iniciada vazia(?)
+    def __init__(self, value):
         self._head = Node(value)
         self._tail = self._head
         self._length = 1
@@ -89,7 +91,7 @@ class LinkedList:
         cur.next=None
         self._tail= cur
         self._length-=1
-
+        
     
     def searchValue(self, value):
         cur=self._head
@@ -105,8 +107,6 @@ class LinkedList:
             return('Valor nao encontrado')
 
 
-        
-
     def isEmpty(self):
         if self._length ==0:
             return True
@@ -114,7 +114,6 @@ class LinkedList:
             return False
 
     
-
     def printList(self):
         if self._length ==0:
             print('lista vazia!')
@@ -126,3 +125,46 @@ class LinkedList:
                 curr = curr.next
             lista+=str(curr.value)
             print(lista)
+    
+    def swapNodes(self, val1, val2):
+        
+        if val1 == val2:
+            print("Elements are the same - no swap needed")
+            return
+ 
+        node1_prev = None
+        node2_prev = None
+        node1 = self._head
+        node2 = self._head
+        
+        while node1 is not None:
+            if node1.value == val1:
+                break
+            node1_prev = node1
+            node1 = node1.next
+            
+        while node2 is not None:
+            if node2.value==val2:
+                break
+            node2_prev = node2
+            node2 = node2.next
+        
+        if(node1 is None or node 2 is None):
+            print("Swap not possible - one of more elemnt is not in the list")
+            return
+            
+        if node1_prev == None:
+            self._head=node2
+        else:
+            node1_prev.next = node2
+            
+        if node2_prev == None:
+            self._head=node1
+        else:
+            node2_prev.next = node1
+                  
+        temp = node1.next
+        node1.next = node2.next
+        node2.next = temp
+    
+            

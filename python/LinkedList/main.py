@@ -24,6 +24,8 @@ def main():
     l1.insertAtIndex(7,2)
     l1.printList()
     
+    l1.swapNodes(2,3)
+    
 
     # Testing clear
     #l1.clear()

@@ -18,4 +18,4 @@ class Node:
 
     @next.setter
     def next(self, node):
-        self._node = node
+        self._next = node
